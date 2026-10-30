@@ -1,0 +1,13 @@
+{
+  "dataset_version": "1.0.4",
+  "total_protocol_sections": 107,
+  "package_filename": "caresphere_knowledge_v1.0.4.json.gz",
+  "package_size_bytes": 32913,
+  "sha256_checksum": "9ea5cdeaa2de4410cb7c78e997e2e5a5b52730591bde1c6e28be83f156515b43",
+  "supported_languages": [
+    "en",
+    "te",
+    "hi"
+  ],
+  "last_updated_timestamp": 1793389315
+}

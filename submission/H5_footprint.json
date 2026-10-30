@@ -1,0 +1,9 @@
+{
+  "model_names": [
+    "Qwen2.5-0.5B-Instruct q4_k_m"
+  ],
+  "model_size_mb": 491,
+  "peak_ram_mb": 1150,
+  "median_latency_ms_cpu": 450,
+  "offline": true
+}

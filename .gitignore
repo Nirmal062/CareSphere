@@ -1,0 +1,95 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*/__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+
+# Environments, Secrets & Credentials
+.env
+.env.*
+!.env.example
+FULL_CODE/.env
+FULL_CODE/.env.*
+!FULL_CODE/.env.example
+gcp_credentials.json
+*.pem
+*.key
+
+# Virtual Environments
+.venv/
+*/.venv/
+env/
+*/env/
+venv/
+*/venv/
+ENV/
+
+# Datasets and Large Downloaded Models (Pack data stored locally, not committed)
+/data/
+/FULL_CODE/data/
+/models/
+/FULL_CODE/models/
+*.db
+*.sqlite
+*.sqlite3
+
+# Node Dependencies & Build Artifacts
+node_modules/
+*/node_modules/
+frontend/node_modules/
+FULL_CODE/frontend/node_modules/
+mobile/node_modules/
+FULL_CODE/mobile/node_modules/
+dist/
+*/dist/
+frontend/dist/
+FULL_CODE/frontend/dist/
+mobile/dist/
+FULL_CODE/mobile/dist/
+build/
+*/build/
+.npm/
+
+# Testing, Coverage & Evaluation Dumps
+.pytest_cache/
+*/.pytest_cache/
+.coverage
+htmlcov/
+score.json
+evaluation_report*.json
+grounding_score.json
+scratch/
+
+# Archives & Temporary Dumps
+*.zip
+*.tar.gz
+*.log
+
+# Root convenience runner files (code & lockfiles reside in FULL_CODE/)
+/package.json
+/package-lock.json
+/.env.example
+
+# OS-generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDE & Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Explicitly KEEP official submission outputs
+!submission/
+!submission/**
+!submission/H5_answers.jsonl
+!submission/H5_visit_list.csv
+!submission/H5_footprint.json

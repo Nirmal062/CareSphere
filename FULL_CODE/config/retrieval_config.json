@@ -1,0 +1,23 @@
+{
+  "vector_store": "chromadb",
+  "chroma_dir": "data/chroma_db",
+  "collection_protocols": "protocol_sections",
+  "collection_verified_qa": "verified_qa",
+  "distance_metric": "cosine",
+  "similarity_formula": "cosine_similarity = 1.0 - cosine_distance",
+  "top_k": 3,
+  "similarity_threshold": 0.52,
+  "verified_qa_similarity_threshold": 0.65,
+  "min_evidence_score": 0.45,
+  "fallback_to_refusal": true,
+  "refusal_section_id": "SCP-1.2",
+  "description": "ChromaDB persistent retrieval config with calibrated cosine similarity threshold for strict grounding and SCP-1.2 deflection.",
+  "calibrated_metrics": {
+    "optimal_threshold": 0.52,
+    "f1": 0.9333,
+    "recall": 0.875,
+    "refusal_rate": 1.0,
+    "section_accuracy": 0.8,
+    "total_eval_queries": 68
+  }
+}

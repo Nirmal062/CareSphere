@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "caresphere"
+version = "1.0.0"
+description = "CareSphere — Frontline Health-Worker Decision Companion"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "fastapi>=0.110.0",
+    "uvicorn[standard]>=0.28.0",
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    "pydantic>=2.0.0",
+    "httpx>=0.28.0",
+]
+
+[tool.setuptools]
+py-modules = ["backend_api"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["FULL_CODE*"]
+exclude = ["data*", "frontend*", "node_modules*", "submission*", "emergency_detection_step1*"]
+namespaces = true

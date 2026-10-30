@@ -1,0 +1,43 @@
+{
+  "name": "caresphere-mobile",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "test": "node -e \"console.log('Use npm run test:engine to test offline client triage engine')\"",
+    "test:engine": "npx tsc --target es2020 --module commonjs --resolveJsonModule --esModuleInterop --skipLibCheck test_mobile_engine.ts src/engine/protocolEngine.ts src/engine/emergencyDetector.ts src/engine/refusalDetector.ts src/types/index.ts && node test_mobile_engine.js"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "1.23.1",
+    "@react-native-community/netinfo": "^12.0.1",
+    "@react-navigation/bottom-tabs": "^6.6.1",
+    "@react-navigation/native": "^6.1.18",
+    "@types/pako": "^2.0.4",
+    "expo": "~52.0.28",
+    "expo-asset": "~11.0.5",
+    "expo-av": "~15.0.1",
+    "expo-crypto": "^58.0.7",
+    "expo-file-system": "^58.0.13",
+    "expo-linking": "~7.0.4",
+    "expo-sms": "~13.0.0",
+    "expo-speech": "~13.0.0",
+    "expo-sqlite": "~15.0.6",
+    "expo-status-bar": "~2.0.1",
+    "lucide-react-native": "^0.469.0",
+    "pako": "^3.0.3",
+    "react": "18.3.1",
+    "react-native": "0.76.6",
+    "react-native-safe-area-context": "4.12.0",
+    "react-native-screens": "~4.4.0",
+    "react-native-svg": "15.8.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@types/react": "~18.3.12",
+    "typescript": "^5.3.3"
+  },
+  "private": true
+}

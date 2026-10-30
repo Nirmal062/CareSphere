@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans antialiased text-[#0F172A] bg-[#F8FAFC];
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Sunlight Mode: High-contrast outdoor field visibility for bright ambient daylight */
+.sunlight-mode {
+  filter: contrast(108%) saturate(105%);
+}
+
+.sunlight-mode body {
+  background-color: #f8fafc !important;
+  color: #020617 !important;
+}
+
+.sunlight-mode .bg-white {
+  border-color: #94a3b8 !important;
+  box-shadow: 0 1px 4px 0 rgba(15, 23, 42, 0.16) !important;
+}
+
+/* Custom scrollbars for data tables and protocol excerpts */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
