@@ -51,6 +51,20 @@ build/
 */build/
 .npm/
 
+# React Native / Expo Caches & Native Builds
+.expo/
+*/.expo/
+FULL_CODE/mobile/.expo/
+android/
+*/android/
+FULL_CODE/mobile/android/
+ios/
+*/ios/
+FULL_CODE/mobile/ios/
+*.apk
+*.aab
+*.ipa
+
 # Testing, Coverage & Evaluation Dumps
 .pytest_cache/
 */.pytest_cache/
